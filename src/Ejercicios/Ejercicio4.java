@@ -13,33 +13,83 @@ import java.util.Scanner;
  */
 public class Ejercicio4 {
 	public Ejercicio4() {
-		// Ejercicio 1
-		System.out.println("--- Ejercicio 1 ---");
-		saludar();
+		// // Ejercicio 1
+		// System.out.println("--- Ejercicio 1 ---");
+		// saludar();
 
-		// Ejercicio 2
-		System.out.println("--- Ejercicio 2 ---");
-		ejercicio2();
+		// // Ejercicio 2
+		// System.out.println("--- Ejercicio 2 ---");
+		// ejercicio2();
 
-		// Ejercicio 3
-		System.out.println("--- Ejercicio 3 ---");
-		ejercicio3();
+		// // Ejercicio 3
+		// System.out.println("--- Ejercicio 3 ---");
+		// ejercicio3();
 
-		// Ejercicio 4
-		System.out.println("--- Ejercicio 4 ---");
-		ejercicio4();
+		// // Ejercicio 4
+		// System.out.println("--- Ejercicio 4 ---");
+		// ejercicio4();
 
-		// Ejercicio 5
-		System.out.println("--- Ejercicio 5 ---");
-		ejercicio5();
+		// // Ejercicio 5
+		// System.out.println("--- Ejercicio 5 ---");
+		// ejercicio5();
 
-		// Ejercicio 6
-		System.out.println("--- Ejercicio 6 ---");
-		ejercicio6();
+		// // Ejercicio 6
+		// System.out.println("--- Ejercicio 6 ---");
+		// ejercicio6();
 
-		// Ejercicio 7
-		System.out.println("--- Ejercicio 7 ---");
-		ejercicio7();
+		// // Ejercicio 7
+		// System.out.println("--- Ejercicio 7 ---");
+		// ejercicio7();
+
+		// // Ejercicio 8
+		// System.out.println("--- Ejercicio 8 ---");
+		// ejercicio8();
+		
+		// // Ejercicio 9
+		// System.out.println("--- Ejercicio 9 ---");
+		// ejercicio9();
+
+		// // Ejercicio 10
+		// System.out.println("--- Ejercicio 10 ---");
+		// ejercicio10();
+	}
+
+	public void ejercicio9() {
+		Scanner in = new Scanner(System.in);
+		System.out.print("Ingrese un numero para ver si es positivo o no: ");
+		int numero = in.nextInt();
+		System.out.println("El numero es: " + esPositivo(numero));
+		in.close();
+	}
+
+	public boolean esPositivo(int numero) {
+		return numero > 0;
+	}
+
+	public void ejercicio10() {
+		Scanner in = new Scanner(System.in);
+		System.out.println("Ingrese su nombre: ");
+		String name = in.next();
+		mostrarMensaje(name);
+		in.close();
+	}
+
+	public void mostrarMensaje(String nombre) {
+		System.out.println("Bienvenido " + nombre + "!");
+	}
+
+	public void ejercicio8() {
+		Scanner in = new Scanner(System.in);
+		System.out.println("Ingrese 3 notas");
+		double nota1 = in.nextDouble();
+		double nota2 = in.nextDouble();
+		double nota3 = in.nextDouble();
+		System.out.println("El promedio es: " + promedio(nota1, nota2, nota3));
+		in.close();
+	}
+
+	public double promedio(double nota1, double nota2, double nota3) {
+		return (nota1 + nota2 + nota3) / 3;
 	}
 
 	public void ejercicio7() {
