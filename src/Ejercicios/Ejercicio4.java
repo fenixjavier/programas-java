@@ -44,7 +44,7 @@ public class Ejercicio4 {
 		// // Ejercicio 8
 		// System.out.println("--- Ejercicio 8 ---");
 		// ejercicio8();
-		
+
 		// // Ejercicio 9
 		// System.out.println("--- Ejercicio 9 ---");
 		// ejercicio9();
@@ -52,6 +52,27 @@ public class Ejercicio4 {
 		// // Ejercicio 10
 		// System.out.println("--- Ejercicio 10 ---");
 		// ejercicio10();
+
+		// // Ejercicio 11
+		// System.out.println("--- Ejercicio 11 ---");
+		// ejercicio11();
+	}
+
+	public void ejercicio11() {
+		Scanner in = new Scanner(System.in);
+		System.out.print("Ingrese una nota y la validaremos: ");
+		int nota = in.nextInt();
+		boolean valida = validarNota(nota);
+		if (valida) {
+			System.out.println("La nota es valida.");
+		} else {
+			System.out.println("La nota no es valida.");
+		}
+		in.close();
+	}
+
+	public boolean validarNota(int nota) {
+		return nota > 0 && nota < 10;
 	}
 
 	public void ejercicio9() {
