@@ -1,11 +1,10 @@
 package main;
 
-import Ejercicios.Calculadora;
-import Window.Main;
+import Ejercicios.Ejercicio4;
 
 public class Proyecto {
     // Proceso principal
     public static void main(String[] args) {
-        new Main();
+        new Ejercicio4();
     }
 }
