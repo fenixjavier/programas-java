@@ -3,6 +3,8 @@ package Retos;
 import java.util.Scanner;
 
 public class ExtraerNumeros {
+    // Proceso principal
+    // Constructor
     public ExtraerNumeros() {
         System.out.println("Ingrese un numero con muchos digitos.");
         Scanner scanner = new Scanner(System.in);
