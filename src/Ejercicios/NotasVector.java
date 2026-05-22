@@ -9,6 +9,10 @@ import java.util.Scanner;
  * Una vez finalizada la carga, se pide calcular el promedio de notas.
  */
 public class NotasVector {
+	int size = 20;
+
+	// Proceso principal
+	// 
 	public NotasVector() {
 		Scanner in = new Scanner(System.in);
 
@@ -34,7 +38,7 @@ public class NotasVector {
 
 	// Lee las 20 notas y las devuelve
 	double[] leerNotas(Scanner in) {
-		double[] notas = new double[3];
+		double[] notas = new double[size];
 		int notaActual = 0;
 
 		while (true) {
@@ -46,7 +50,7 @@ public class NotasVector {
 			System.out.print("Ingrese la nota Numero " + (notaActual + 1) + ": ");
 			double nota = in.nextDouble();
 
-			// DONTDO: Se podria validar que sean menores a 10 pero no lo pide el ejercicio
+			// Se podria validar que las notas sean menores a 10 pero no lo pide el ejercicio
 
 			// Validar que sean positivos
 			if (nota < 0) {
