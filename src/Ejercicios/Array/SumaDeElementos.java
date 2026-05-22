@@ -9,7 +9,7 @@ import java.util.Scanner;
  * suma de todos sus elementos.
  */
 public class SumaDeElementos {
-	int cantidad = 3;
+	int cantidad = 10;
 
 	/**
 	 * Proceso principal
