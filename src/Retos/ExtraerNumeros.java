@@ -2,9 +2,13 @@ package Retos;
 
 import java.util.Scanner;
 
+/**
+ * Extraer numeros
+ */
 public class ExtraerNumeros {
-    // Proceso principal
-    // Constructor
+    /**
+     * Proceso principal
+     */
     public ExtraerNumeros() {
         System.out.println("Ingrese un numero con muchos digitos.");
         Scanner scanner = new Scanner(System.in);
@@ -19,8 +23,12 @@ public class ExtraerNumeros {
         scanner.close();
     }
 
-    // Contar la cantidad de digitos
-    //
+    /**
+     * Contar la cantidad de digitos
+     * 
+     * @param num
+     * @return
+     */
     int cantidadDeDigitos(int num) {
         int digitos = 0;
         int numCopy = num;
@@ -40,8 +48,11 @@ public class ExtraerNumeros {
         return digitos;
     }
 
-    // Extraer digitos como arreglo
-    // 
+    /**
+     * Extraer digitos como arreglo
+     * @param num
+     * @return
+     */
     int[] numeroAArreglo(int num) {
         // Crear un arreglo con la cantidad de digitos
         int[] digitos = new int[cantidadDeDigitos(num)];
