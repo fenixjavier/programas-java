@@ -1,10 +1,17 @@
 package main;
 
-import Ejercicios.Array.ConteoParesEImpares;
+import Ejercicios.Array.SumaDeElementos;
 
+/**
+ * Clase principal
+ */
 public class Proyecto {
-    // Proceso principal
+    /**
+     * Proceso principal
+     * 
+     * @param args
+     */
     public static void main(String[] args) {
-        new ConteoParesEImpares();
+        new SumaDeElementos();
     }
 }
