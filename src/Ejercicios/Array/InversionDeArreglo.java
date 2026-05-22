@@ -10,7 +10,7 @@ import java.util.Scanner;
  * vector.
  */
 public class InversionDeArreglo {
-	int cantidad = 3;
+	int cantidad = 10;
 
 	/**
 	 * 

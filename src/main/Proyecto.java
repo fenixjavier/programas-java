@@ -1,6 +1,6 @@
 package main;
 
-import Ejercicios.Array.InversionDeArreglo;
+import Ejercicios.Array.BusquedaEnArreglo;
 
 /**
  * Clase principal
@@ -12,6 +12,6 @@ public class Proyecto {
      * @param args
      */
     public static void main(String[] args) {
-        new InversionDeArreglo();
+        new BusquedaEnArreglo();
     }
 }
