@@ -1,6 +1,6 @@
 package main;
 
-import Ejercicios.Array.BusquedaEnArreglo;
+import Ejercicios.EjerciciosArray_29_Mayo.TorneoDeJuegos;
 
 /**
  * Clase principal
@@ -12,6 +12,6 @@ public class Proyecto {
      * @param args
      */
     public static void main(String[] args) {
-        new BusquedaEnArreglo();
+        new TorneoDeJuegos();
     }
 }
