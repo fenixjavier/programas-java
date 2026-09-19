@@ -1,5 +1,6 @@
 package main;
 
+import Ejercicios.TPLibreria;
 import Ejercicios.AyP_II.TP_1.*;;
 
 /**
@@ -12,9 +13,6 @@ public class Proyecto {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// GestionAlumnos obj = new GestionAlumnos();
-		// ControlInventario obj = new ControlInventario();
-		// RegistroPeliculas obj = new RegistroPeliculas();
-		AgendaDeContactos obj = new AgendaDeContactos();
+		TPLibreria tp = new TPLibreria();
 	}
 }
