@@ -3,7 +3,7 @@ package AyP_II.TP_1;
 import java.util.Scanner;
 
 class Venta {
-	int numeroFactura;
+	int mes;
 	double monto;
 }
 
@@ -39,8 +39,14 @@ public class ControlVentas {
 			System.out.println("Ingrese el monto: ");
 			double monto = in.nextDouble();
 
+			ventas[ventasIngresadas].mes = mes;
+			ventas[ventasIngresadas].monto = monto;
+
 			ventasIngresadas++;
 		}
+
+		double sumaTotalVentas = totalDeVentas(ventas);
+		System.out.println("Total de ventas: " + sumaTotalVentas);
 
 		in.close();
 	}
@@ -50,5 +56,16 @@ public class ControlVentas {
 	 */
 	public boolean validarMes(int mes) {
 		return mes >= 1 && mes <= 12;
+	}
+
+	/**
+	 * Total de ventas
+	 */
+	public double totalDeVentas(Venta[] ventas) {
+		double total = 0;
+		for (int i = 0; i < ventas.length; i++) {
+			total += ventas[i].monto;
+		}
+		return total;
 	}
 }
