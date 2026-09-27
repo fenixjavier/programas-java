@@ -1,4 +1,4 @@
-package Ejercicios.AyP_II.TP_1;
+package AyP_II.TP_1;
 
 import java.util.Scanner;
 

@@ -208,7 +208,6 @@ public class TPLibreria {
 				System.out.println("Ingrese el stock del libro");
 				nuevoLibro.stock = in.nextInt();
 				capacidadMaxima++;
-
 			}
 		} while (salir != 0);
 
@@ -235,7 +234,6 @@ public class TPLibreria {
 			Libro libro = libros[i];
 
 			if (libro.codigo == codigo) {
-				// Reutilizamos el procedimiento mostrar libro
 				mostrarLibro(libro);
 			} else {
 				System.out.println("Este libro no existe");
@@ -288,6 +286,9 @@ public class TPLibreria {
 	/**
 	 * Consultar el libro con mayor stock
 	 * 
+	 * Determinar cuál es el libro que posee la mayor
+	 * cantidad de ejemplares disponibles
+	 * 
 	 * @author 
 	 */
 	public static void consultarMayorStock(Libro[] libros, int cantidad) {
@@ -301,8 +302,7 @@ public class TPLibreria {
 			}
 		}
 
-		System.out.println("Posición en areglo: " + posicion);
-		System.out.println("Titulo: " + libros[posicion].titulo);
+		System.out.println("Titulo del libro con mayor stock: " + libros[posicion].titulo);
 		System.out.println("Ejemplares: " + maxStock);
 	}
 

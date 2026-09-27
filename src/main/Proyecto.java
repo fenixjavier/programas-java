@@ -1,7 +1,7 @@
 package main;
 
-import Ejercicios.TPLibreria;
-import Ejercicios.AyP_II.TP_1.*;;
+import AyP_II.TP_1.*;
+import Ejercicios.TPLibreria;;
 
 /**
  * Clase principal
